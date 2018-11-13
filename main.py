@@ -3,12 +3,14 @@ from fc_layer import FCLayer
 from activation_layer import ActivationLayer
 import numpy as np
 
+# activation function and its derivative
 def act(x):
     return np.tanh(x);
 
 def act_prime(x):
     return 1-np.tanh(x)**2;
 
+# loss function and its derivative
 def loss(y_true, y_pred):
     return np.mean(np.power(y_true-y_pred, 2));
 
