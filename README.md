@@ -2,12 +2,14 @@
 
 This code shows how to create a modular code for neural networks. It can be easily extended to create any kind of layers, like Convolutional Layers.
 
+For now, this code only implements *Stochastic Gradient Descent* (SGD).
+
 # Layers
 
-### Fully Connected Layer
+#### Fully Connected Layer
 `FCLayer(input_shape, output_shape)`
 
-### Activation Layer
+#### Activation Layer
 `ActivationLayer(input_shape, activation, activation_prime)`
 
 # Example
