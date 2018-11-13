@@ -6,11 +6,8 @@ For now, this code only implements *Stochastic Gradient Descent* (SGD).
 
 # Layers
 
-#### Fully Connected Layer
-`FCLayer(input_shape, output_shape)`
-
-#### Activation Layer
-`ActivationLayer(input_shape, activation, activation_prime)`
+**Fully Connected Layer** `FCLayer(input_shape, output_shape)`
+**Activation Layer** `ActivationLayer(input_shape, activation, activation_prime)`
 
 # Example
 
