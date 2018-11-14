@@ -5,7 +5,7 @@ class FCLayer(Layer):
     def __init__(self, input_shape, output_shape):
         self.input_shape = input_shape;
         self.output_shape = output_shape;
-        self.weights = np.random.rand(input_shape[1], output_shape[1]);
+        self.weights = np.random.rand(input_shape[1], output_shape[1]) - 0.5;
         self.bias = np.random.rand(1, output_shape[1]) - 0.5;
 
     def forward_propagation(self, input):
