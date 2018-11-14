@@ -18,7 +18,7 @@ def loss(y_true, y_pred):
     return np.mean(np.power(y_true-y_pred, 2));
 
 def loss_prime(y_true, y_pred):
-    return 2*(y_pred-y_true);
+    return 2*(y_pred-y_true)/y_true.size;
 
 # training data
 x_train = np.array([[[0,0]], [[0,1]], [[1,0]], [[1,1]]]);
